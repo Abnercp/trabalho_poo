@@ -77,6 +77,7 @@ class DespesasController {
                 valor, 
                 idDoResponsavel
             })
+            return response.json(despesas)
         } catch (err) {
             return response  
                 .status(400)
